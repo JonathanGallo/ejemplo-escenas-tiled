@@ -23,11 +23,7 @@ export class Retry extends Phaser.Scene {
       )
       .setScale(1.1);
     // Vaca triste
-    this.add.image(
-      this.cameras.main.centerX,
-      this.cameras.main.centerY / 1.5,
-      "sad_cow"
-    );
+    this.add.image(400, 300,"sad_cow");
     // Texto que muestra el puntaje maximo alcanzado
     this.add
       .text(

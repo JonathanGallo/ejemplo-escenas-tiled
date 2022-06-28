@@ -18,8 +18,8 @@ export class Preloads extends Phaser.Scene {
     this.load.image("star", "public/assets/images/star.png");
     this.load.image("bomb", "public/assets/images/bomb.png");
     this.load.spritesheet("dude", "public/assets/images/dude.png", {
-      frameWidth: 32,
-      frameHeight: 48,
+      frameWidth: 66,
+      frameHeight: 60,
     });
   }
 
