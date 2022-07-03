@@ -9,17 +9,23 @@ export class Preloads extends Phaser.Scene {
   preload() {
     this.load.image("sad_cow", "public/assets/images/sad_cow.png");
     this.load.image("phaser_logo", "public/assets/images/phaser_logo.png");
-    this.load.image(
-      "mainmenu_bg",
-      "public/assets/images/main_menu_background.png"
-    );
+    this.load.image("mainmenu_bg","public/assets/images/main_menu_background.png");
+    this.load.image("mapa","public/assets/images/mapa_de_niveles.png");
     this.load.image("sky", "public/assets/images/sky.png");
     this.load.image("ground", "public/assets/images/platform.png");
     this.load.image("star", "public/assets/images/star.png");
     this.load.image("bomb", "public/assets/images/bomb.png");
+    this.load.image('botonvolver', 'public/assets/images/botonvolver.png');
+    this.load.image('botonvolver2', 'public/assets/images/botonvolver_2.png');
+    this.load.image('nivel1', 'public/assets/images/nivel1_1.png');
+    this.load.image('nivel1_2', 'public/assets/images/nivel1_2.png');
+    this.load.image('nivel2', 'public/assets/images/nivel2_1.png');
+    this.load.image('nivel2_2', 'public/assets/images/nivel2_2.png');
+    this.load.image('nivel3', 'public/assets/images/nivel3_1.png');
+    this.load.image('nivel3_2', 'public/assets/images/nivel3_2.png');
     this.load.spritesheet("dude", "public/assets/images/dude.png", {
       frameWidth: 66,
-      frameHeight: 60,
+      frameHeight: 58,
     });
   }
 

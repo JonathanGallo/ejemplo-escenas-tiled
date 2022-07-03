@@ -56,6 +56,7 @@ export class Play extends Phaser.Scene {
     //  Player physics properties. Give the little guy a slight bounce.
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
+    player.setSize(25,0);
 
     //  Input Events
     if ((cursors = !undefined)) {
@@ -86,7 +87,7 @@ export class Play extends Phaser.Scene {
     bombs = this.physics.add.group();
 
     //  The score
-    scoreText = this.add.text(30, 6, "score: 0", {
+    scoreText = this.add.text(600, 6, "score: 0", {
       fontSize: "32px",
       fill: "#000",
     });
@@ -104,6 +105,19 @@ export class Play extends Phaser.Scene {
 
     gameOver = false;
     score = 0;
+
+    // Boton para volver
+        
+    var botonre = this.add.image(70, 35, 'botonvolver').setScale(0.3)
+    .setInteractive()
+    .on('pointerover', () => this.add.image(70, 35, 'botonvolver2').setScale(0.3))
+    .on('pointerout', () => this.add.image(70, 35, 'botonvolver').setScale(0.3))
+    .on('pointerdown', () => this.botonreset())
+  }
+
+  botonreset(){
+    this.scene.start('Mapa');
+    
   }
 
   update() {
